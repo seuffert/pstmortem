@@ -1,0 +1,71 @@
+# ---------------------------------------------------------------------------
+# PSTmortem .gitignore
+# ---------------------------------------------------------------------------
+
+# --- Outlook source data files (NEVER commit; can be huge and sensitive) ---
+*.ost
+*.pst
+backup.ost
+
+# --- Export output directories / formats ---
+# Default/common output locations and any exported mailbox data.
+# `out` is listed without a trailing slash too, so it is ignored whether it is a
+# real directory or a symlink to an external export location.
+out
+out/
+output
+output/
+*-export/
+export/
+# mbox + Thunderbird .sbd trees and Maildir layouts produced by the tool.
+*.mbox
+*.sbd/
+# Maildir spool dirs (only ignore at the repo root level to avoid surprises).
+/cur/
+/new/
+/tmp/
+
+# --- Python virtual environments ---
+venv/
+.venv/
+env/
+ENV/
+virtualenv/
+
+# --- Python bytecode / caches ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# --- Packaging / build artifacts ---
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# --- Test / coverage / type-checker caches ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# --- Logs ---
+*.log
+
+# --- OS cruft ---
+.DS_Store
+Thumbs.db
+*~
+
+# --- Editor / IDE ---
+.idea/
+*.swp
+*.swo
+.vscode/
+# VS Code workspace files (personal; not tracked).
+*.code-workspace
