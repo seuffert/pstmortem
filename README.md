@@ -1,5 +1,8 @@
 # PSTmortem
 
+**Primary repository:** [gitlab.com/seuffert/pstmortem](https://gitlab.com/seuffert/pstmortem)  
+**GitHub mirror:** [github.com/seuffert/pstmortem](https://github.com/seuffert/pstmortem)
+
 `PSTmortem` is a Python command-line tool for reading Microsoft Outlook OST and PST files and exporting their mail folders to formats that are useful outside Outlook:
 
 - `mbox` for Thunderbird Local Folders
